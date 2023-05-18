@@ -35,7 +35,7 @@ do {
 
             if (confirmacao){
                 imovel.push(cadastro)
-            }
+            } else {alert('Voltando ao menu.')}
             break
 
 

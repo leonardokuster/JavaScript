@@ -16,13 +16,17 @@ do {
 
     switch(opcao) {
         case 'a':
-            let cartaAdicionada = prompt('Informe o nome da carta')
+            const cartaAdicionada = prompt('Informe o nome da carta')
             baralho.push(cartaAdicionada)
             break
         
         case 'b':
-            let cartaRemovida = baralho.pop(cartas)
-            alert(`A carta removida foi ${cartaRemovida}`)
+            const cartaRemovida = baralho.pop(cartas)
+            if (!cartaRemovida) {
+                alert('Não há nenhuma carta no baralho.')
+            } else {
+                alert(`A carta removida foi ${cartaRemovida}`)
+            }
             break
 
         case 'c':

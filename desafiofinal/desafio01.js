@@ -90,7 +90,6 @@ function excluirVaga() {
     } else {alert('Voltando ao menu.')} 
 }
 
-/*- A opção de excluir uma vaga deve pedir o índice da vaga, mostrar suas informações e pedir que o usuário confirme a exclusão da vaga antes de realmente exclui-la.*/
 
 function exibirMenu() {
     return prompt('Selecione a opção desejada: \n\na) Listar vagas disponíveis \nb) Criar uma nova vaga \nc) Visualizar uma vaga \nd) Inscrever um candidadto em uma vaga \ne) Excluir uma vaga \nf) Sair')

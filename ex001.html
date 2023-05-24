@@ -17,9 +17,35 @@
     <h1>Olá, mundo!</h1>
     <p>Já me livrei da maldição.</p>
     <script>
-        window.alert('Minha primeira mensagem!')
-        window.confirm('Está gostando de JS?') // Botão com ok e cancelar
-        window.prompt('Qual é o seu nome?') // Caixa de pergunta
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // String
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // String
+
+        var soma = n1 + n2
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+        /* 
+            Concatenação
+
+            (number + number) para adição
+            
+            (string + string) para concatenação
+
+            OBS: como o comando window.prompt retorna uma string obrigatoriamente, preciso transformar o valor da string em number para que consiga ser feita a soma
+
+            Number.parseInt(n) para números inteiros
+
+            Number.parseFloat(n) para números reais
+
+            Number(n) para ele se virar e descobrir qual utilizar de acordo com o valor que ele recebeu
+
+            String(n) para converter em string
+
+            n.toString() para converter em string
+
+            Ao colocar entre crases ` ` com o símbolo ${} consigo utilizar place holder
+        
+        */
     </script>
 </body>
 </html>

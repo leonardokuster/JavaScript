@@ -1,0 +1,92 @@
+<!--
+Construa uma página web que permita montar a escalação de um time de jogadores. Nele deverá ser possível:
+
+- Escalar um jogador
+    - Informar a posição do jogador a ser escalado para o time.
+    - Informar o nome do jogador.
+    - Informar o número da camisa do jogador.
+    - Ter um botão “Escalar” que pergunta ao usuário se ele deseja confirmar a escalação daquele jogador e então insere as informações em uma lista na página.
+    - Após o jogador ser escalado os campos de texto devem ser limpos.
+- Remover um jogador
+    - Informar o número da camisa do jogador.
+    - Ter um botão “Remover” que pergunta ao usuário se ele deseja confirmar a remoção daquele jogador e então exclui ele da lista na página.
+    - Após o jogador ser removido o campo de texto deve ser limpo.
+
+Dica: lembrando que é possível acessar o texto de um input através da propriedade value.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação de Times</title>
+    <script src="./index.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.2em;
+        }
+        button {
+            background-color: lightgray;
+            width: 292px;
+            border: 1px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: rgb(136, 136, 136);
+        }
+        #position{
+            width: 215px;
+        }
+        #name{
+            width: 230px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escalação de Times</h1>
+    <hr>
+
+    <h2>Escalar Jogador</h2>
+    
+    <p>
+        <label for="position">Posição:</label>
+        <input type="text" name="position" id="position">
+    </p>
+    <p>
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name">
+    </p>
+    <p>
+        <label for="shirtNumber">Número da camisa:</label>
+        <input type="number" name="shirtNumber" id="shirtNumber">
+    </p>
+    <p>
+        <button onclick="addPlayer()">Escalar</button>
+    </p>
+
+    <h2>Remover Jogador</h2>
+    
+    <p>
+        <label for="shirtNumberToRemove">Número da camisa:</label>
+        <input type="number" name="shirtNumberToRemove" id="shirtNumberToRemove">
+    </p>
+    <p>
+        <button onclick="removePlayer()">Remover</button>
+    </p>
+    
+    
+    
+    <h2>Time:</h2>
+    <ul id="teamList"></ul>
+
+</body>
+</html>

@@ -6,7 +6,7 @@ form.addEventListener('submit', function(event) {
     const name = document.querySelector('input[name="name"]').value
     const address = document.querySelector('input[name="address"]').value
     const breadType = document.querySelector('select[name="breadType"]').value
-    const main = document.querySelector('input[name="main"]').value
+    const main = document.querySelector('input[name="main"]:checked').value
     const message = document.querySelector('textarea[name="message"]').value
 
     let salad = ''

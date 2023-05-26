@@ -12,15 +12,15 @@ function register(ev) {
     }
   }
   
-  function removeEvent() {
-    button.removeEventListener("click", register)
-    alert("Event Removed")
-  }
+function removeEvent() {
+  button.removeEventListener("click", register)
+  alert("Event Removed")
+}
   
-  const button = document.getElementById("register-button")
+const button = document.getElementById("register-button")
   
-  button.addEventListener("click", register)
+button.addEventListener("click", register)
   
-  button.addEventListener("mouseover", function (ev) {
-    console.log(ev)
-  })
+button.addEventListener("mouseover", function (ev) {
+  console.log(ev)
+})

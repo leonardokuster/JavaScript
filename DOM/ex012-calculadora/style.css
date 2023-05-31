@@ -16,7 +16,6 @@ body {
     background-color: var(--bg-color);
     color: var(--font-color);
     font-family: "Ubuntu", sans-serif;
-
     display: block;
     margin: 0px auto;
     max-width: 500px;
@@ -82,6 +81,21 @@ header {
     filter: brightness(0.8);
 }
 
+#clear, #equal {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+    width: 117px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#clear:hover, #equal:hover {
+    filter: brightness(0.8);
+}
+
+
 section {
     display: flex;
     align-content: center;
@@ -117,4 +131,13 @@ section {
     font-size: 2em;
     text-align: end;
     padding-right: 7px;
+}
+
+.error {
+    background-color: var(--error-color);
+}
+  
+.success {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }

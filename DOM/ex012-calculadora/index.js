@@ -35,6 +35,7 @@ input.addEventListener('keydown', function (ev) {
 
 document.getElementById('equal').addEventListener('click', calculate)
 
+
 function calculate() {
     resultInput.value = "ERROR"
     resultInput.classList.add("error")
@@ -43,8 +44,16 @@ function calculate() {
     resultInput.classList.remove("error")
 }
 
-document.getElementById('copyResult'). addEventListener('click', function() {
-    
+document.getElementById('copyResult'). addEventListener('click', function(ev) {
+    const button = ev.currentTarget
+    if (button.innerText === 'Copy') {
+        button.innerText = 'Coppied!'
+        button.classList.add('success')
+        navigator.clipboard.writeText(resultInput.value)
+    } else {
+        button.innerText = 'Copy'
+        button.classList.remove('success')
+    }
 })
 
   

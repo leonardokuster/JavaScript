@@ -137,12 +137,12 @@ div > input {
 
 .charX {
     color: var(--x-color);
-    font-size: 2em;
+    font-size: 4em;
     text-align: center;
 }
 
 .charO {
     color: var(--o-color);
-    font-size: 2em;
+    font-size: 4em;
     text-align: center;
 }

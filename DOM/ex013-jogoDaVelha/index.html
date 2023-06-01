@@ -1,13 +1,13 @@
 <!--
 Construa um jogo tic-tac-toe, conhecido em português como jogo da velha, utilizando HTML, CSS e Javascript. Você pode desenvolver com liberdade, da forma que preferir, mas o jogo precisa atender aos seguintes requisitos:
 
-- Deve ser possível incluir os nomes dos dois jogadores;
-- O nome do jogador da vez deve ser mostrado na tela e alterado a medida que os turnos vão se alternando;
-- Um tabuleiro deve ser mostrado na tela e ser atualizado quando o jogador clicar na região que ele quer marcar;
+
+
+
 - Quando um jogador clicar no tabuleiro deve ser marcado um “X” ou “O” de acordo com o jogador da vez e não deve ser possível clicar naquela região novamente;
 - Quando um jogador ganhar seu nome deve ser mostrado na tela e as regiões da vitória devem ser destacadas de alguma forma;
 - Em caso de empate, uma mensagem de empate deve ser mostrada na tela;
-- Deve ser possível reiniciar o jogo para jogar novamente.
+
 -->
 
 <!DOCTYPE html>
@@ -27,12 +27,11 @@ Construa um jogo tic-tac-toe, conhecido em português como jogo da velha, utiliz
     <main>
 
         <div id="playerInformation">
-            <h2>Jogadores: </h2>
-            <label for="player1">Jogador 1: </label>
-            <input type="text" name="player1" id="player1"> <br>
-            <label for="player2">Jogador 2: </label>
-            <input type="text" name="player2" id="player2"> <br>
-            <button type="submit">Começar Jogo</button>
+            <input type="text" name="player1" id="player1" placeholder="First Player Nickname"> <br> 
+            <input type="text" name="player2" id="player2" placeholder="Second Player Nickname"> 
+            <button id="startGame" type="button">Start Game!</button> <br>
+            <button id="resetGame" type="button">Reset Game</button>  
+            <label for="player">É a vez de:</label> 
             <input type="text" name="player" id="player" disabled>
         </div>
 
@@ -51,4 +50,4 @@ Construa um jogo tic-tac-toe, conhecido em português como jogo da velha, utiliz
 
     </main>
 </body>
-</html>
+</h

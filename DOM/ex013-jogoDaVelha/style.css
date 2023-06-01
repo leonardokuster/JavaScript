@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+:root {
+    --bg-color: #212529;
+    --border-color: #666;
+    --font-color: #f1f5f9;
+    --o-color: #4dc1ff;
+    --x-color: #ff0043;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+header {
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 2em;
+}
+
+#playerInformation {
+    
+
+}
+
+#tictactoe {
+    display: grid;
+    grid-template-columns: 130px 130px 130px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.charType {
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+}
+
+.charType:hover {
+    background-color: var(--border-color);
+}
+
+#sq1 {
+    border: 3px solid;
+    border-left: none;
+    border-top: none;
+    border-color: var(--border-color);
+}
+
+#sq2 {
+    border: 3px solid;
+    border-top: none;
+    border-color: var(--border-color);
+}
+
+#sq3 {
+    border: 3px solid;
+    border-right: none;
+    border-top: none;
+    border-color: var(--border-color);
+}
+
+#sq4 {
+    border: 3px solid;
+    border-left: none;
+    border-color: var(--border-color);
+}
+
+#sq5 {
+    border: 3px solid;
+    border-color: var(--border-color);
+}
+
+#sq6 {
+    border: 3px solid;
+    border-right: none;
+    border-color: var(--border-color);
+}
+
+#sq7 {
+    border: 3px solid;
+    border-left: none;
+    border-bottom: none;
+    border-color: var(--border-color);
+}
+
+#sq8 {
+    border: 3px solid;
+    border-bottom: none;
+    border-color: var(--border-color);
+}
+
+#sq9 {
+    border: 3px solid;
+    border-right: none;
+    border-bottom: none;
+    border-color: var(--border-color);
+}

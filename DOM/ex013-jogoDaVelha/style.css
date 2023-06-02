@@ -78,57 +78,57 @@ div > input {
     background-color: var(--border-color);
 }
 
-#sq1 {
+[data-region='1.1'] {
     border: 3px solid;
     border-left: none;
     border-top: none;
     border-color: var(--border-color);
 }
 
-#sq2 {
+[data-region='1.2'] {
     border: 3px solid;
     border-top: none;
     border-color: var(--border-color);
 }
 
-#sq3 {
+[data-region='1.3'] {
     border: 3px solid;
     border-right: none;
     border-top: none;
     border-color: var(--border-color);
 }
 
-#sq4 {
+[data-region='2.1'] {
     border: 3px solid;
     border-left: none;
     border-color: var(--border-color);
 }
 
-#sq5 {
+[data-region='2.2'] {
     border: 3px solid;
     border-color: var(--border-color);
 }
 
-#sq6 {
+[data-region='2.3'] {
     border: 3px solid;
     border-right: none;
     border-color: var(--border-color);
 }
 
-#sq7 {
+[data-region='3.1'] {
     border: 3px solid;
     border-left: none;
     border-bottom: none;
     border-color: var(--border-color);
 }
 
-#sq8 {
+[data-region='3.2'] {
     border: 3px solid;
     border-bottom: none;
     border-color: var(--border-color);
 }
 
-#sq9 {
+[data-region='3.3'] {
     border: 3px solid;
     border-right: none;
     border-bottom: none;

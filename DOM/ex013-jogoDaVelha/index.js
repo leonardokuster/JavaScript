@@ -1,8 +1,8 @@
 let player = document.getElementById('player')
 const player1 = document.getElementById('player1')
 const player2 = document.getElementById('player2')
-const boardRegions = document.querySelectorAll('#tictactoe')
-let vBoard = []
+const boardRegions = document.querySelectorAll('.charType')
+
 
 let sq1 = document.getElementById('sq1')
 let sq2 = document.getElementById('sq2')
@@ -48,6 +48,8 @@ document.querySelectorAll('.charType').forEach(function (pressBtn) {
                 player.value = player1.value
                 return
             } 
+        } else {
+            player.value = 'O jogo empatou!'
         }
     })
 })
@@ -58,85 +60,60 @@ document.getElementById('resetGame').addEventListener('click', function() {
 
 function winner() {
 
-    if (sq1 && sq1 === sq2 && sq1 === sq3){
-        if (sq1 === 'X') {
-            player.value = player1.value + 'ganhou!!!'
-        } else if (sq1 === 'O'){
-            player.value = player2.value + 'ganhou!!!'
+    if (sq1.value && sq1.value === sq2.value && sq1.value === sq3.value){
+        if (sq1.value === 'X') {
+            player.value = player1.value + ' ganhou!!!'
+        } else if (sq1.value === 'O'){
+            player.value = player2.value + ' ganhou!!!'
         }
     }
-    if (sq3 && sq3 === sq6 && sq3 === sq9){
-        if (sq3 === 'X') {
-            player.value = player1.value + 'ganhou!!!'
-        } else if (sq3 === 'O'){
-            player.value = player2.value + 'ganhou!!!'
+    if (sq3.value && sq3.value === sq6.value && sq3.value === sq9.value){
+        if (sq3.value === 'X') {
+            player.value = player1.value + ' ganhou!!!'
+        } else if (sq3.value === 'O'){
+            player.value = player2.value + ' ganhou!!!'
         }
     }
-    if (sq7 && sq7 === sq8 && sq7 === sq9){
-        if (sq7 === 'X') {
-            player.value = player1.value + 'ganhou!!!'
-        } else if (sq7 === 'O'){
-            player.value = player2.value + 'ganhou!!!'
+    if (sq7.value && sq7.value === sq8.value && sq7.value === sq9.value){
+        if (sq7.value === 'X') {
+            player.value = player1.value + ' ganhou!!!'
+        } else if (sq7.value === 'O'){
+            player.value = player2.value + ' ganhou!!!'
         }
     }
-    if (sq1 && sq1 === sq4 && sq1 === sq7){
-        if (sq1 === 'X') {
-            player.value = player1.value + 'ganhou!!!'
-        } else if (sq1 === 'O'){
-            player.value = player2.value + 'ganhou!!!'
+    if (sq1.value && sq1.value === sq4.value && sq1.value === sq7.value){
+        if (sq1.value === 'X') {
+            player.value = player1.value + ' ganhou!!!'
+        } else if (sq1.value === 'O'){
+            player.value = player2.value + ' ganhou!!!'
         }
     }
-    if (sq1 && sq1 === sq5 && sq1 === sq9){
-        if (sq1 === 'X') {
-            player.value = player1.value + 'ganhou!!!'
-        } else if (sq1 === 'O'){
-            player.value = player2.value + 'ganhou!!!'
+    if (sq1.value && sq1.value === sq5.value && sq1.value === sq9.value){
+        if (sq1.value === 'X') {
+            player.value = player1.value + ' ganhou!!!'
+        } else if (sq1.value === 'O'){
+            player.value = player2.value + ' ganhou!!!'
         }
     }
-    if (sq3 && sq3 === sq5 && sq3 === sq7){
-        if (sq3 === 'X') {
-            player.value = player1.value + 'ganhou!!!'
-        } else if (sq3 === 'O'){
-            player.value = player2.value + 'ganhou!!!'
+    if (sq3.value && sq3.value === sq5.value && sq3.value === sq7.value){
+        if (sq3.value === 'X') {
+            player.value = player1.value + ' ganhou!!!'
+        } else if (sq3.value === 'O'){
+            player.value = player2.value + ' ganhou!!!'
         }
     }
-    if (sq4 && sq4 === sq5 && sq4 === sq6){
-        if (sq4 === 'X') {
-            player.value = player1.value + 'ganhou!!!'
-        } else if (sq4 === 'O'){
-            player.value = player2.value + 'ganhou!!!'
+    if (sq4.value && sq4.value === sq5.value && sq4.value === sq6.value){
+        if (sq4.value === 'X') {
+            player.value = player1.value + ' ganhou!!!'
+        } else if (sq4.value === 'O'){
+            player.value = player2.value + ' ganhou!!!'
         }
     }
-    if (sq2 && sq2 === sq5 && sq2 === sq8){
-        if (sq2 === 'X') {
-            player.value = player1.value + 'ganhou!!!'
-        } else if (sq2 === 'O'){
-            player.value = player2.value + 'ganhou!!!'
+    if (sq2.value && sq2.value === sq5.value && sq2.value === sq8.value){
+        if (sq2.value === 'X') {
+            player.value = player1.value + ' ganhou!!!'
+        } else if (sq2.value === 'O'){
+            player.value = player2.value + ' ganhou!!!'
         }
     }
 }
-
-
-
-/*
-function getWinRegions() {
-    const winRegions = []
-    if (vBoard[1][1] && vBoard[1][1] === vBoard[1][2] && vBoard[1][1] === vBoard[1][3])
-      winRegions.push("1.1", "1.2", "1.3")
-    if (vBoard[2][1] && vBoard[2][1] === vBoard[2][2] && vBoard[2][1] === vBoard[2][3])
-      winRegions.push("2.1", "2.2", "2.3")
-    if (vBoard[3][1] && vBoard[3][1] === vBoard[3][2] && vBoard[3][1] === vBoard[3][3])
-      winRegions.push("3.1", "3.2", "3.3")
-    if (vBoard[1][1] && vBoard[1][1] === vBoard[2][1] && vBoard[1][1] === vBoard[3][1])
-      winRegions.push("1.1", "2.1", "3.1")
-    if (vBoard[1][2] && vBoard[1][2] === vBoard[2][2] && vBoard[1][2] === vBoard[3][2])
-      winRegions.push("1.2", "2.2", "3.2")
-    if (vBoard[1][3] && vBoard[1][3] === vBoard[2][3] && vBoard[1][3] === vBoard[3][3])
-      winRegions.push("1.3", "2.3", "3.3")
-    if (vBoard[1][1] && vBoard[1][1] === vBoard[2][2] && vBoard[1][1] === vBoard[3][3])
-      winRegions.push("1.1", "2.2", "3.3")
-    if (vBoard[1][3] && vBoard[1][3] === vBoard[2][2] && vBoard[1][3] === vBoard[3][1])
-      winRegions.push("1.3", "2.2", "3.1")
-    return winRegions
-  }
-*/
